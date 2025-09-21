@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Diogo Gil — Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="dark-mode">
+  <!-- Loader -->
+  <div id="loader">
+    <div class="spinner"></div>
+  </div>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="#hero" class="logo">Diogo Gil</a>
+      <nav>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#certificates">Certificates</a>
+        <a href="#experience">Professional Experience</a>
+        <a href="#recommendations">Recommendations</a>
+        <a href="#education">Education</a>
+      </nav>
+      <button id="dark-toggle">☾</button>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="hero" class="hero">
+    <div class="container hero-inner">
+      <img src="assets/381d913128f8a2d4455daf198a17479c.jpg" alt="Diogo Gil" class="profile-pic" />
+      <h1>Diogo Gil</h1>
+      <p class="subtitle">
+  <span id="typing-text-1" class="typing-text"></span><br />
+  <span id="typing-text-2" class="typing-text cursor"></span>
+</p>
+
+
+      <div class="hero-buttons">
+        <a href="assets/CV.pdf" class="btn dark" download>Download CV</a>
+        <a href="mailto:DiogoDimasGil@gmail.com" class="btn dark">Contact Me</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+<section id="skills" class="section">
+  <div class="container">
+    <h2>Skills</h2>
+    <div class="skills-grid">
+      
+      <!-- Technical / Programming -->
+      <div class="skill-col">
+        <h3>Technical / Programming</h3>
+        <div class="skill"><span>Python</span><div class="bar"><div style="width:90%"></div></div></div>
+        <div class="skill"><span>SQL</span><div class="bar"><div style="width:80%"></div></div></div>
+        <div class="skill"><span>HTML/CSS/JavaScript</span><div class="bar"><div style="width:85%"></div></div></div>
+        <div class="skill"><span>GitHub</span><div class="bar"><div style="width:75%"></div></div></div>
+        <div class="skill"><span>VS Code</span><div class="bar"><div style="width:80%"></div></div></div>
+      </div>
+      
+      <!-- Finance / Analytics -->
+      <div class="skill-col">
+        <h3>Finance / Analytics</h3>
+        <div class="skill"><span>Excel (avançado)</span><div class="bar"><div style="width:95%"></div></div></div>
+        <div class="skill"><span>Análise de dados</span><div class="bar"><div style="width:90%"></div></div></div>
+        <div class="skill"><span>Risk Management</span><div class="bar"><div style="width:90%"></div></div></div>
+        <div class="skill"><span>Derivatives</span><div class="bar"><div style="width:80%"></div></div></div>
+        <div class="skill"><span>Structured Products</span><div class="bar"><div style="width:75%"></div></div></div>
+        <div class="skill"><span>Corporate Finance</span><div class="bar"><div style="width:85%"></div></div></div>
+        <div class="skill"><span>Financial Markets (Yale)</span><div class="bar"><div style="width:90%"></div></div></div>
+        <div class="skill"><span>Financial Engineering (Columbia)</span><div class="bar"><div style="width:85%"></div></div></div>
+        <div class="skill"><span>Corporate Finance Essentials (IESE)</span><div class="bar"><div style="width:80%"></div></div></div>
+      </div>
+      
+      <!-- Design / Tools -->
+      <div class="skill-col">
+        <h3>Design / Tools</h3>
+        <div class="skill"><span>Figma</span><div class="bar"><div style="width:75%"></div></div></div>
+        <div class="skill"><span>Microsoft Office</span><div class="bar"><div style="width:90%"></div></div></div>
+        <div class="skill"><span>LaTeX</span><div class="bar"><div style="width:80%"></div></div></div>
+        <div class="skill"><span>AutoCAD</span><div class="bar"><div style="width:70%"></div></div></div>
+      </div>
+      
+      <!-- Soft Skills -->
+      <div class="skill-col">
+        <h3>Soft Skills</h3>
+        <div class="skill"><span>Leadership</span><div class="bar"><div style="width:85%"></div></div></div>
+        <div class="skill"><span>Problem Solving</span><div class="bar"><div style="width:90%"></div></div></div>
+        <div class="skill"><span>Effective Communication</span><div class="bar"><div style="width:88%"></div></div></div>
+        <div class="skill"><span>Critical Thinking</span><div class="bar"><div style="width:92%"></div></div></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+  <!-- Projects -->
+<section id="projects" class="section gray">
+  <div class="container">
+    <h2>Projects</h2>
+    <div class="grid">
+      
+      <!-- Project 1 -->
+      <div class="card project-vertical">
+        <img src="assets/pexels-pixabay-534216.jpg" alt="Quantitative Market Risk Dashboard" class="project-img"/>
+        <div class="project-content">
+          <h3>Quantitative Market Risk Dashboard</h3>
+          <div class="project-description collapsed">
+            <p>
+              A dynamic Streamlit dashboard that provides real-time portfolio risk insights to finance professionals.
+It simplifies risk assessment and supports data-driven decision-making in volatile markets.
+Key features include multi-method VaR analysis, stress testing, backtesting, CVaR calculation, and interactive visualizations.
+            </p>
+          </div>
+          <div class="project-buttons">
+            <a href="https://quant-market-risk-dashboard.streamlit.app/" class="btn small" target="_blank">View</a>
+            
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Project 2 -->
+      <div class="card project-vertical">
+        <img src="assets/1749831932262.jpg" alt="EatSimple Project" class="project-img"/>
+        <div class="project-content">
+          <h3>EatSimple's Startup Project</h3>
+          <p>
+            EatSimple is a company which focuses on preparing tasty, healthy and FULLY customised meals, tailored to your objectives. The meals are made for Cut, Bulk or Maintenance, regarding your age, sex, height, weight and physical activity.
+            Calculated calories, protein and macros, fresh ingredients and a special focus on your needs. We take the gym progression to a whole new level.
+            Stop wasting time thinking about what to eat or figuring out how to do it, WE will take care of it for you!
+          </p>
+          <div class="project-buttons">
+            <a href="https://eatsimple-1e822.web.app/?fbclid=PAZXh0bgNhZW0CMTEAAacA0OzAOMKOdZ-n15obMuBgJpDHGUqAiIsBKBJnHz7o4YhIfyQweQVb9P-Z4w_aem_dGH5mzc6m_LfTPgVvFINAg" class="btn small" target="_blank">View Website</a>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Project 3 -->
+      <div class="card project-vertical">
+        <img src="assets/stars-galaxy-2880x1800-10307.jpg" alt="EatSimple Project" class="project-img"/>
+        <div class="project-content">
+        <h3>Diving in the Early Universe with Webb</h3>
+        <p>
+          In this paper, I present a case study of a high-redshift galaxy from the JADES survey, analysing JWST/NIRSpec spectra using full spectral fitting with FADO to investigate its stellar populations, emission line properties, and ionised gas conditions.
+        </p>
+        <div class="project-buttons">
+          <a href="assets/Diving_in_the_Early_Universe_with_Webb.pdf" class="btn small" target="_blank">View PDF</a>
+        </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+  <!-- Certificates -->
+  <section id="certificates" class="section">
+    <div class="container">
+      <h2>Certificates</h2>
+      <div class="grid">
+        <div class="cert-card">
+          <img src="assets/yale in gray box_0.png" alt="Yale" />
+          <div>
+            <h3>Yale</h3>
+            <p>Financial Markets</p>
+            <a href="assets/Financial_Markets_Diogo_Gil.pdf" class="btn small" target="_blank">Open PDF</a>
+          </div>
+        </div>
+        <div class="cert-card">
+          <img src="assets/columbia.png" alt="Columbia" />
+          <div>
+            <h3>Columbia</h3>
+            <p>Financial Engineering</p>
+            <a href="assets/columbia.pdf" class="btn small" target="_blank">Open PDF</a>
+          </div>
+        </div>
+        <div class="cert-card">
+          <img src="assets/Logo-IESE.png" alt="IESE" />
+          <div>
+            <h3>IESE</h3>
+            <p>Corporate Finance Essentials</p>
+            <a href="assets/iese.pdf" class="btn small" target="_blank">Open PDF</a>
+          </div>
+        </div>
+        <div class="cert-card">
+          <img src="assets/cambridgeinternational_logo.jpg" alt="Columbia" />
+          <div>
+            <h3>Cambridge</h3>
+            <p>C1 Advanced</p>
+            <a href="assets/C1_Advanced_Certificate.pdf" class="btn small" target="_blank">Open PDF</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Professional Experience -->
+<section id="experience" class="section gray">
+  <div class="container">
+    <h2>Professional Experience</h2>
+    <div class="grid">
+
+      <!-- Experience 1 -->
+      <div class="card project-vertical">
+        <div class="project-content">
+          <h3>Risk Trainee</h3>
+          <p><strong>BNP Paribas – Rising Talents Program</strong> | Oct 2025 – Oct 2026</p>
+          <ul class="exp-list">
+            <li>Selected for the competitive <em>Rising Talents</em> program at BNP Paribas Cetelem, aimed at developing future leaders in risk management and financial services.</li>
+            <li>Contributed to risk analysis, portfolio monitoring, and stress testing across consumer finance operations.</li>
+            <li>Developed and optimized dashboards and reporting tools to improve decision-making within the Risk Management department.</li>
+            <li>Collaborated with cross-functional teams, gaining exposure to credit risk, market risk, and operational risk frameworks in an international environment.</li>
+          </ul>
+          <button class="btn small custom-btn exp-toggle">Show more</button>
+        </div>
+      </div>
+
+      <!-- Experience 2 -->
+      <div class="card project-vertical">
+        <div class="project-content">
+          <h3>Junior Consultant (Internship)</h3>
+          <p><strong>D&G Consultants</strong> | Jun 2024 – Sep 2024</p>
+          <ul class="exp-list">
+            <li>Development of investment projects for different clients</li>
+            <li>Collaboration on projects focused on analytics and decision support.</li>
+            <li>Handling databases, building indicators, and running simulations.</li>
+          </ul>
+          <button class="btn small custom-btn exp-toggle">Show more</button>
+        </div>
+      </div>
+
+      <!-- Experience 3 -->
+      <div class="card project-vertical">
+        <div class="project-content">
+          <h3>Physics and Mathematics Tutor</h3>
+          <p><strong>Freelancer</strong> | Oct 2023 – May 2025</p>
+          <ul class="exp-list">
+            <li>Explanations for secondary and higher education students.</li>
+            <li>Adaptation of pedagogical methods to student profiles.</li>
+            <li>Adaptation of tutoring schedules to balance multiple students’ availabilities..</li>
+          </ul>
+          <button class="btn small custom-btn exp-toggle">Show more</button>
+        </div>
+      </div>
+
+      <!-- Experience 4 -->
+      <div class="card project-vertical">
+        <div class="project-content">
+          <h3>Waiter</h3>
+          <p><strong>"Bank" and "La Cantina" Restaurants</strong> | Jun 2023 – Sep 2023 & Jun 2022 – Sep 2022</p>
+          <ul class="exp-list">
+            <li>Ability to multitask effectively in high-pressure environments.</li>
+            <li>Adaptation to demanding schedules.</li>
+            <li>Multitasking under pressure.</li>
+            <li>Adaptation to fast-paced and demanding schedules.</li>
+          </ul>
+          <button class="btn small custom-btn exp-toggle">Show more</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+
+ <!-- Recommendations -->
+<section id="recommendations" class="section">
+  <div class="container">
+    <h2>Recommendations</h2>
+    <div class="recommendations-grid">
+
+      <!-- Carta 1 -->
+      <div class="testimonial">
+        <p class="testimonial-text">
+          <em>
+            “Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ac eros nec purus 
+            posuere feugiat. Donec vitae turpis a arcu vehicula cursus. Vestibulum ante ipsum primis 
+            in faucibus orci luctus et ultrices posuere cubilia curae; Sed dictum leo nec elit euismod 
+            interdum. Suspendisse potenti. Nulla facilisi. Quisque non dictum odio, nec lacinia erat.”
+          </em>
+        </p>
+        <strong>Prof. Ana Silva — Professor of Physics, FCUL</strong>
+        <div class="testimonial-buttons">
+          <button class="btn small custom-btn toggle-btn">Show more</button>
+          <a href="cartas/carta1.pdf" class="btn small custom-btn" download>Download PDF</a>
+        </div>
+      </div>
+
+      <!-- Carta 2 -->
+      <div class="testimonial">
+        <p class="testimonial-text">
+          <em>
+            “To	whom	it	may	concern,
+I	 am	 writing	 to	 recommend	 Mr.	 Diogo	 Gil	 for	 admission	 to	 the	 Master’s	 in	 Finance	
+program	at	Nova	School	of	Business	and	Economics.
+Diogo	 was	 a	 student	 in	 two	 of	 my	 courses	 at	 the	 University	 of	 Lisbon,	 Analytical	
+Mechanics	 and	 Computational	 Physics.	 What	 distinguishes	 Diogo	 is	 the	 breadth	 and	
+coherence	of	his	academic	and	professional	path.	He	completed	a	Bachelor’s	in	Physics	
+with	 a	 minor	 in	 Computer	 Engineering,	 a	 combination	 that	 has	 given	 him	 solid	
+foundations	in	quantitative	reasoning,	problem-solving,	and	programming.	
+During	my	classes,	Diogo	stood	out	for	his	perseverance.	He	may	not	have	been	among	
+the	top-performing	students,	but	he	consistently	showed	interest	in	understanding	the	
+conceptual	and	computational	aspects	of	the	material,	especially	where	they	intersected	
+with	real-world	applications.	His	motivation	was	clear,	and	he	was	always	eager	to	bridge	
+the	gap	between	theory	and	practice.
+What	I	 find	most	compelling	in	Diogo’s	profile	is	the	combination	of	scientific	training,	
+coding	skills,	and	a	genuine	interest	in	Finance.	His	current	internship	at	BNP	Paribas,	
+along	 with	 his	 previous	 experience	 in	 quantitative	 risk	 modeling	 and	 dashboard	
+development,	demonstrate	both	his	technical	capacity	and	his	commitment	to	the	field.	I	
+believe	this	combination	will	allow	him	to	approach	financial	problems	with	a	structured,	
+analytical	 mindset	 and	 a	 level	 of	 quantitative	 rigor	 that	 sets	 him	 apart	 from	 more	
+conventional	profiles.
+I	 am	 confident	 that	 Diogo	 will	 benefit	 greatly	 from	 the	 academic	 and	 professional	
+ecosystem	 at	 Nova	 SBE,	 and	 that	 his	 curiosity,	 adaptability,	 and	 interdisciplinary	
+background	will	enable	him	to	contribute	meaningfully	to	the	program	and	beyond.
+I	am	available	to	provide	further	information	if	required.
+Yours	sincerely,
+Nuno	Araújo
+(Professor	of	Physics,	Universidade	de	Lisboa,	Portugal)”
+          </em>
+        </p>
+        <strong>Dr. Nuno	Araújo - Professor	of	Physics,	Universidade	de	Lisboa,	Portugal</strong>
+        <div class="testimonial-buttons">
+          <button class="btn small custom-btn toggle-btn">Show more</button>
+          <a href="assets/Diogo_Gil_Sep2025_signed.pdf" class="btn small custom-btn" download>Download PDF</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+  <!-- Education -->
+  <section id="education" class="section gray">
+    <div class="container">
+      <h2>Education</h2>
+      <div class="timeline">
+        <div class="edu-item">
+          <div class="dot"></div>
+          <div>
+            <h3>BSc Physics (minor Computer Science)</h3>
+            <p>2022 – 2025</p>
+          </div>
+        </div>
+        <div class="edu-item">
+          <div class="dot"></div>
+          <div>
+            <h3>Aspiring MSc International Finance @ Nova SBE</h3>
+            <p>Future</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>© 2025 Diogo Gil. All rights reserved.</p>
+      <div class="socials">
+        <a href="https://www.linkedin.com/in/diogo-gil-597810300/">LinkedIn</a>
+        <a href="https://github.com/DiogoGil2727">GitHub</a>
+        <a href="mailto:DiogoDimasGil@gmail.com">Email</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
