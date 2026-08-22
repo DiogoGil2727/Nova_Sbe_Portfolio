@@ -425,9 +425,11 @@ body:not(.dark-mode) .card:hover { border-color: #b9b6ab; }
   height: 180px;
   object-fit: cover;
   border-radius: var(--radius-sm);
-  margin: 0 0 1.3rem; /* remove margens negativas */
+  margin: -1.6rem -1.6rem 1.3rem;
+  width: calc(100% + 3.2rem);
   filter: saturate(0.85) contrast(1.02);
 }
+
 
 .project-vertical .project-content { flex: 1; display: flex; flex-direction: column; }
 .project-vertical h3 {
