@@ -55,16 +55,11 @@ document.addEventListener("DOMContentLoaded", () => {
  document.querySelectorAll('.testimonial').forEach(card => {
     const textEl = card.querySelector('.testimonial-text');
     const btn = card.querySelector('.toggle-btn');
-    const fullText = textEl.innerHTML;
-    const shortText = fullText.slice(0, Math.floor(fullText.length / 2)) + '...';
 
-    // começa cortado
-    let expanded = false;
-    textEl.innerHTML = shortText;
-
+    // colapsado por defeito via CSS (line-clamp); o texto original
+    // nunca é alterado, só a classe que controla quantas linhas mostra
     btn.addEventListener('click', () => {
-      expanded = !expanded;
-      textEl.innerHTML = expanded ? fullText : shortText;
+      const expanded = textEl.classList.toggle('expanded');
       btn.textContent = expanded ? 'Show less' : 'Show more';
     });
   });
@@ -92,3 +87,58 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
 
+// Mobile nav toggle
+const navToggle = document.getElementById("nav-toggle");
+const mainNav = document.getElementById("main-nav");
+if (navToggle && mainNav) {
+  navToggle.addEventListener("click", () => {
+    const isOpen = mainNav.classList.toggle("open");
+    navToggle.setAttribute("aria-expanded", isOpen ? "true" : "false");
+  });
+  mainNav.querySelectorAll("a").forEach(link => {
+    link.addEventListener("click", () => {
+      mainNav.classList.remove("open");
+      navToggle.setAttribute("aria-expanded", "false");
+    });
+  });
+}
+
+// Active nav link on scroll
+const navLinks = document.querySelectorAll('#main-nav a[href^="#"]');
+const navSections = Array.from(navLinks)
+  .map(link => document.querySelector(link.getAttribute("href")))
+  .filter(Boolean);
+
+if ("IntersectionObserver" in window && navSections.length) {
+  const navObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const id = "#" + entry.target.id;
+        navLinks.forEach(link => {
+          link.classList.toggle("active", link.getAttribute("href") === id);
+        });
+      }
+    });
+  }, { rootMargin: "-40% 0px -55% 0px", threshold: 0 });
+
+  navSections.forEach(section => navObserver.observe(section));
+}
+
+// Scroll reveal for cards, testimonials, timeline items and skill bars
+if ("IntersectionObserver" in window) {
+  const revealTargets = document.querySelectorAll(
+    ".card, .cert-card, .testimonial, .edu-item, .skill"
+  );
+  revealTargets.forEach(el => el.classList.add("reveal"));
+
+  const revealObserver = new IntersectionObserver((entries, obs) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("in-view");
+        obs.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.15 });
+
+  revealTargets.forEach(el => revealObserver.observe(el));
+}
