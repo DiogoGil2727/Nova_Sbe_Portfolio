@@ -4,7 +4,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Diogo Gil — Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,500;9..144,600;9..144,700&family=Inter:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
 <body class="dark-mode">
@@ -17,7 +19,7 @@
   <header class="navbar">
     <div class="container nav-container">
       <a href="#hero" class="logo">Diogo Gil</a>
-      <nav>
+      <nav id="main-nav">
         <a href="#skills">Skills</a>
         <a href="#projects">Projects</a>
         <a href="#certificates">Certificates</a>
@@ -25,14 +27,19 @@
         <a href="#recommendations">Recommendations</a>
         <a href="#education">Education</a>
       </nav>
-      <button id="dark-toggle">☾</button>
+      <div class="nav-controls">
+        <button id="dark-toggle" aria-label="Toggle dark mode">☾</button>
+        <button id="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
     </div>
   </header>
 
   <!-- Hero -->
   <section id="hero" class="hero">
     <div class="container hero-inner">
-      <img src="assets/1785667183457.png" alt="Diogo Gil" class="profile-pic" />
+      <img src="pfp.png" alt="Diogo Gil" class="profile-pic" />
       <h1>Diogo Gil</h1>
       <p class="subtitle">
   <span id="typing-text-1" class="typing-text"></span><br />
@@ -229,19 +236,6 @@ Key features include multi-method VaR analysis, stress testing, backtesting, CVa
         </div>
       </div>
 
-      <!-- Experience 2 -->
-      <div class="card project-vertical">
-        <div class="project-content">
-          <h3>Junior Consultant (Internship)</h3>
-          <p><strong>D&G Consultants</strong> | Jun 2024 – Sep 2024</p>
-          <ul class="exp-list">
-            <li>Development of investment projects for different clients</li>
-            <li>Collaboration on projects focused on decision support.</li>
-            <li>Handling databases, building indicators, and running simulations.</li>
-          </ul>
-          <button class="btn small custom-btn exp-toggle">Show more</button>
-        </div>
-      </div>
 
       <!-- Experience 3 -->
       <div class="card project-vertical">
@@ -482,7 +476,6 @@ Durante o seu curto mas prolífero período, no qual desenvolveu funções no no
   <script src="script.js"></script>
 </body>
 </html>
-
 
 
 
