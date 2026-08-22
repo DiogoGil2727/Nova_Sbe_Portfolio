@@ -22,8 +22,8 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
 
 document.addEventListener("DOMContentLoaded", () => {
-  const text1 = "Risk Trainee @ BNP Paribas ";
-  const text2 = "Aspiring International Finance Professional";
+  const text1 = "Finance Student (Nova SBE) ";
+  const text2 = "Quantitative & Finance Professional";
 
   const el1 = document.getElementById("typing-text-1");
   const el2 = document.getElementById("typing-text-2");
