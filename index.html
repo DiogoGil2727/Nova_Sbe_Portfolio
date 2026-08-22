@@ -39,7 +39,7 @@
   <!-- Hero -->
   <section id="hero" class="hero">
     <div class="container hero-inner">
-      <img src="1785667183457.png" alt="Diogo Gil" class="profile-pic" />
+      <img src="pfp.png" alt="Diogo Gil" class="profile-pic" />
       <h1>Diogo Gil</h1>
       <p class="subtitle">
   <span id="typing-text-1" class="typing-text"></span><br />
@@ -48,7 +48,13 @@
 
 
       <div class="hero-buttons">
-        <a href="assets/CV.pdf" class="btn dark" download>Download CV</a>
+        <details class="cv-dropdown">
+          <summary class="btn dark">Download CV</summary>
+          <div class="cv-dropdown-menu">
+            <a href="assets/CV_Quantitative_Research.pdf" download>CV Quantitative Research</a>
+            <a href="assets/CV_Finance_Consulting.pdf" download>CV Finance &amp; Consulting</a>
+          </div>
+        </details>
         <a href="mailto:DiogoDimasGil@gmail.com" class="btn dark">Contact Me</a>
       </div>
     </div>
@@ -63,38 +69,35 @@
       <!-- Technical / Programming -->
       <div class="skill-col">
         <h3>Technical / Programming</h3>
-        <div class="skill"><span>Python</span><div class="bar"><div style="width:90%"></div></div></div>
+        <div class="skill"><span>Python (NumPy, Pandas, SciPy, scikit-learn)</span><div class="bar"><div style="width:90%"></div></div></div>
         <div class="skill"><span>SQL</span><div class="bar"><div style="width:80%"></div></div></div>
         <div class="skill"><span>HTML/CSS/JavaScript</span><div class="bar"><div style="width:85%"></div></div></div>
         <div class="skill"><span>GitHub</span><div class="bar"><div style="width:75%"></div></div></div>
         <div class="skill"><span>VS Code</span><div class="bar"><div style="width:80%"></div></div></div>
-        <div class="skill"><span>SAS Viya for Learners</span><div class="bar"><div style="width:84%"></div></div></div>
+        <div class="skill"><span>SAS / Viya</span><div class="bar"><div style="width:84%"></div></div></div>
       </div>
       
-      <!-- Finance / Analytics -->
+      <!-- Finance & Analytics -->
       <div class="skill-col">
-        <h3>Finance / Analytics</h3>
-        <div class="skill"><span>Excel (avançado)</span><div class="bar"><div style="width:95%"></div></div></div>
-        <div class="skill"><span>Análise de dados</span><div class="bar"><div style="width:90%"></div></div></div>
+        <h3>Finance & Analytics</h3>
+        <div class="skill"><span>Advanced Excel</span><div class="bar"><div style="width:95%"></div></div></div>
+        <div class="skill"><span>Data Analysis & Visualization</span><div class="bar"><div style="width:90%"></div></div></div>
         <div class="skill"><span>Risk Management</span><div class="bar"><div style="width:90%"></div></div></div>
-        <div class="skill"><span>Derivatives</span><div class="bar"><div style="width:80%"></div></div></div>
-        <div class="skill"><span>Structured Products</span><div class="bar"><div style="width:75%"></div></div></div>
+        <div class="skill"><span>Derivatives & Structured Products</span><div class="bar"><div style="width:80%"></div></div></div>
         <div class="skill"><span>Corporate Finance</span><div class="bar"><div style="width:85%"></div></div></div>
+        <div class="skill"><span>Financial Modelling</span><div class="bar"><div style="width:85%"></div></div></div>
         <div class="skill"><span>Financial Markets (Yale)</span><div class="bar"><div style="width:90%"></div></div></div>
         <div class="skill"><span>Financial Engineering (Columbia)</span><div class="bar"><div style="width:85%"></div></div></div>
         <div class="skill"><span>Corporate Finance Essentials (IESE)</span><div class="bar"><div style="width:80%"></div></div></div>
       </div>
       
-      <!-- Design / Tools -->
+      <!-- Tools -->
       <div class="skill-col">
-        <h3>Design / Tools</h3>
+        <h3>Tools</h3>
+        <div class="skill"><span>Power BI</span><div class="bar"><div style="width:85%"></div></div></div>
+        <div class="skill"><span>LaTeX</span><div class="bar"><div style="width:80%"></div></div></div>
         <div class="skill"><span>Figma</span><div class="bar"><div style="width:75%"></div></div></div>
         <div class="skill"><span>Microsoft Office</span><div class="bar"><div style="width:90%"></div></div></div>
-        <div class="skill"><span>LaTeX</span><div class="bar"><div style="width:80%"></div></div></div>
-        <div class="skill"><span>AutoCAD</span><div class="bar"><div style="width:70%"></div></div></div>
-        <div class="skill"><span>Power BI</span><div class="bar"><div style="width:85%"></div></div></div>
-        <div class="skill"><span>CredScore</span><div class="bar"><div style="width:80%"></div></div></div>
-        <div class="skill"><span>iAuto</span><div class="bar"><div style="width:75%"></div></div></div>
       </div>
       
       <!-- Soft Skills -->
@@ -125,9 +128,8 @@
           <h3>Quantitative Market Risk Dashboard</h3>
           <div class="project-description collapsed">
             <p>
-              A dynamic Streamlit dashboard that provides real-time portfolio risk insights to finance professionals.
-It simplifies risk assessment and supports data-driven decision-making in volatile markets.
-Key features include multi-method VaR analysis, stress testing, backtesting, CVaR calculation, and interactive visualizations.
+              A dynamic Streamlit dashboard providing real-time portfolio risk insights.
+Supports data-driven decision-making through multi-method VaR analysis, CVaR, stress testing, backtesting, and interactive visualizations.
             </p>
           </div>
           <div class="project-buttons">
@@ -142,11 +144,9 @@ Key features include multi-method VaR analysis, stress testing, backtesting, CVa
       <div class="card project-vertical">
         <img src="assets/1749831932262.jpg" alt="EatSimple Project" class="project-img"/>
         <div class="project-content">
-          <h3>EatSimple's Startup Project</h3>
+          <h3>EatSimple — Personalized Nutrition Engine</h3>
           <p>
-            EatSimple is a company which focuses on preparing tasty, healthy and FULLY customised meals, tailored to your objectives. The meals are made for Cut, Bulk or Maintenance, regarding your age, sex, height, weight and physical activity.
-            Calculated calories, protein and macros, fresh ingredients and a special focus on your needs. We take the gym progression to a whole new level.
-            Stop wasting time thinking about what to eat or figuring out how to do it, WE will take care of it for you!
+            A customizable nutrition engine that generates fully personalized meal plans based on user attributes (age, sex, height, weight, activity level). Includes backend logic, database models, and an analytics dashboard to support product decisions.
           </p>
           <div class="project-buttons">
             <a href="https://eatsimple-1e822.web.app/?fbclid=PAZXh0bgNhZW0CMTEAAacA0OzAOMKOdZ-n15obMuBgJpDHGUqAiIsBKBJnHz7o4YhIfyQweQVb9P-Z4w_aem_dGH5mzc6m_LfTPgVvFINAg" class="btn small" target="_blank">View Website</a>
@@ -161,7 +161,7 @@ Key features include multi-method VaR analysis, stress testing, backtesting, CVa
         <div class="project-content">
         <h3>Diving in the Early Universe with Webb</h3>
         <p>
-          In this paper, I present a case study of a high-redshift galaxy from the JADES survey, analysing JWST/NIRSpec spectra using full spectral fitting with FADO to investigate its stellar populations, emission line properties, and ionised gas conditions.
+          Case study of a high-redshift galaxy from the JADES survey, analyzing JWST/NIRSpec spectra using full spectral fitting to investigate stellar populations, emission lines, and ionized gas conditions.
         </p>
         <div class="project-buttons">
           <a href="assets/Diving_in_the_Early_Universe_with_Webb.pdf" class="btn small" target="_blank">View PDF</a>
@@ -227,10 +227,11 @@ Key features include multi-method VaR analysis, stress testing, backtesting, CVa
           <h3>Risk Trainee</h3>
           <p><strong>BNP Paribas – Rising Talents Program</strong> | Oct 2025 – Oct 2026</p>
           <ul class="exp-list">
-            <li>Selected for the competitive <em>Rising Talents</em> program at BNP Paribas Cetelem, aimed at developing future leaders in risk management.</li>
-            <li>Contributed to risk analysis, portfolio monitoring, and stress testing across consumer finance operations.</li>
-            <li>Developed dashboards and reporting tools to improve decision-making within the Risk Management department.</li>
-            <li>Collaborated with cross-functional teams, gaining exposure to operational risk frameworks.</li>
+            <li>Selected for the competitive <em>Rising Talents</em> program aimed at developing future leaders in risk management.</li>
+            <li>Contributed to risk analysis, portfolio monitoring, and scenario assessment in consumer finance.</li>
+            <li>Developed dashboards and reporting tools to support decision-making within the Risk Management department.</li>
+            <li>Migrated SAS risk processes to Python, improving maintainability and reducing dependency on legacy systems.</li>
+            <li>Collaborated with cross-functional teams and gained exposure to operational risk frameworks.</li>
           </ul>
           <button class="btn small custom-btn exp-toggle">Show more</button>
         </div>
@@ -243,9 +244,9 @@ Key features include multi-method VaR analysis, stress testing, backtesting, CVa
           <h3>Physics and Mathematics Tutor</h3>
           <p><strong>Freelancer</strong> | Oct 2023 – May 2025</p>
           <ul class="exp-list">
-            <li>Explanations for secondary and higher education students.</li>
-            <li>Adaptation of pedagogical methods to student profiles.</li>
-            <li>Adaptation of tutoring schedules to balance multiple students’ availabilities.</li>
+            <li>Provided tutoring for secondary and university students in Physics and Mathematics.</li>
+            <li>Adapted teaching methods to different student profiles.</li>
+            <li>Managed scheduling efficiently across multiple students.</li>
           </ul>
           <button class="btn small custom-btn exp-toggle">Show more</button>
         </div>
@@ -257,9 +258,8 @@ Key features include multi-method VaR analysis, stress testing, backtesting, CVa
           <h3>Waiter</h3>
           <p><strong>"Bank" and "La Cantina" Restaurants</strong> | Jun 2023 – Sep 2023 & Jun 2022 – Sep 2022</p>
           <ul class="exp-list">
-            <li>Ability to multitask effectively in high-pressure environments.</li>
-            <li>Adaptation to demanding schedules.</li>
-            <li>Adaptation to fast-paced and demanding schedules.</li>
+            <li>Worked in fast-paced environments requiring multitasking and customer service.</li>
+            <li>Adapted to demanding schedules and high-pressure conditions.</li>
           </ul>
           <button class="btn small custom-btn exp-toggle">Show more</button>
         </div>
@@ -406,7 +406,22 @@ Faculdade de Ciências da Universidade de Lisboa”
         </div>
       </div>
 
-      
+      <!-- Carta 4 -->
+      <div class="testimonial">
+        <p class="testimonial-text">
+          <em>
+            “Exmos. Senhores,
+
+Eu, Victor Manuel Pérez Dimas Gil, na qualidade de representante da “D.G. Consultores – Contabilidade e Consultoria Económica”, tendo o prazer de recomendar Diogo António Gil, para o vosso Mestrado em Finanças na Nova SBE.
+Durante o seu curto mas prolífero período, no qual desenvolveu funções no nosso escritório, o mesmo sempre demonstrou capacidades e espírito crítico bem acima da média. Estas necessárias, no meu entender, para desenvolver qualquer atividade profissional a que se proponha no futuro. O mesmo demonstrou não só elevadas qualidades a nível profissional, como também a nível pessoal – íntegro, leal e companheiro. Assim, com base no meu conhecimento pessoal do candidato, acredito que o mesmo será uma mais valia para qualquer curso ou instituição.”
+          </em>
+        </p>
+        <strong>Dr. Victor Gil</strong>
+        <div class="testimonial-buttons">
+          <button class="btn small custom-btn toggle-btn">Show more</button>
+          <a href="assets/Recommendation_Letter_DG_Consultores.pdf" class="btn small custom-btn" download>View PDF</a>
+        </div>
+      </div>
 
     </div>
   </div>
@@ -423,22 +438,22 @@ Faculdade de Ciências da Universidade de Lisboa”
         <div class="edu-item">
           <div class="dot"></div>
           <div>
-            <h3>Msc in Applied Mathematics for Economics and Management [In Progress] @ Fcul</h3>
-            <p>2022 – 2025</p>
+            <h3>MSc in Finance @ Nova School of Business &amp; Economics</h3>
+            <p>2026 – 2027 (In progress)</p>
           </div>
         </div>
         <div class="edu-item">
           <div class="dot"></div>
           <div>
-            <h3>BSc Physics (minor Computer Science) @ Fcul</h3>
-            <p>2022 – 2025</p>
+            <h3>MSc in Applied Mathematics @ FCUL (Transitioned to Finance)</h3>
+            <p>2025</p>
           </div>
         </div>
         <div class="edu-item">
           <div class="dot"></div>
           <div>
-            <h3>Aspiring MSc International Finance @ Nova SBE</h3>
-            <p>Future</p>
+            <h3>BSc in Physics (Minor in Computer Science) @ FCUL</h3>
+            <p>2022 – 2025</p>
           </div>
         </div>
       </div>
