@@ -420,6 +420,7 @@ h1 {
 }
 body:not(.dark-mode) .card:hover { border-color: #b9b6ab; }
 
+.project-vertical { display: flex; flex-direction: column; }
 .project-vertical .project-img {
   width: 100%;
   height: 180px;
@@ -429,8 +430,6 @@ body:not(.dark-mode) .card:hover { border-color: #b9b6ab; }
   width: calc(100% + 3.2rem);
   filter: saturate(0.85) contrast(1.02);
 }
-
-
 .project-vertical .project-content { flex: 1; display: flex; flex-direction: column; }
 .project-vertical h3 {
   font-size: 1.12rem;
